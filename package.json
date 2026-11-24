@@ -1,0 +1,21 @@
+{
+  "name": "oman-petroleum-wms",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Petroleum Warehouse Management System (WMS) tailored for Sultanate of Oman Oil & Gas operations in Next.js JavaScript",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "autoprefixer": "^10.7.0",
+    "next": "^16.4.6",
+    "postcss": "^8.5.33",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^4.3.5"
+  }
+}

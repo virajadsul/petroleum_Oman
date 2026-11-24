@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.card { @apply rounded-xl border border-slate-200 bg-white shadow-sm; }
+.btn { @apply rounded-lg px-4 py-2.5 text-sm font-medium transition min-h-11 cursor-pointer; }
+.btn-primary { @apply bg-blue-700 text-white hover:bg-blue-800 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:text-slate-600; }
+
+:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* Print only the gate pass */
+@media print {
+  .no-print { display: none !important; }
+  body * { visibility: hidden; }
+  .print-area, .print-area * { visibility: visible; }
+  .print-area { position: fixed; inset: 0; border: none; }
+}
